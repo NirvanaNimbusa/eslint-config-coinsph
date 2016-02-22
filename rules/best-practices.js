@@ -94,7 +94,7 @@ module.exports = {
     'no-implied-eval': 2,
 
     // Disallow this keywords outside of classes or class-like objects.
-    'no-invalid-this': 2,
+    'no-invalid-this': 0,
 
     // Disallow Iterator
     'no-iterator': 2,
