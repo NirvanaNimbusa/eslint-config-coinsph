@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-coinsph",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Coins.ph's ESLint config file",
   "main": "index.js",
   "author": "Roman (Ky6uk) Nuritdinov",
