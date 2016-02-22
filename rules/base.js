@@ -1,6 +1,11 @@
 /* eslint no-magic-numbers: 0 */
 
 module.exports = {
+  env: {
+    browser: true,
+    amd: false
+  },
+
   rules: {
     // Disallow or Enforce Dangling Commas
     'comma-dangle': [2, 'never'],
