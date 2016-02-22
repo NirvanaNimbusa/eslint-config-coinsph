@@ -161,7 +161,7 @@ module.exports = {
     'no-trailing-spaces': 2,
 
     // Disallow Dangling Underscores in Identifiers
-    'no-underscore-dangle': 2,
+    'no-underscore-dangle': 0,
 
     // Disallow conditional expressions that can be expressed with simpler constructs
     'no-unneeded-ternary': [2, {
@@ -212,14 +212,10 @@ module.exports = {
     }],
 
     // Import Sorting
-    'sort-imports': [1, {
-      ignoreCase: true
-    }],
+    'sort-imports': 0,
 
     // Variable Sorting
-    'sort-vars': [2, {
-      ignoreCase: true
-    }],
+    'sort-vars': 0,
 
     // Require Or Disallow Space Before Blocks
     'space-before-blocks': [2, 'always'],
