@@ -40,7 +40,7 @@ module.exports = {
     'func-names': 0,
 
     // Enforce Function Style
-    'func-style': [2, 'expression', {
+    'func-style': [2, 'declaration', {
       allowArrowFunctions: true
     }],
 
