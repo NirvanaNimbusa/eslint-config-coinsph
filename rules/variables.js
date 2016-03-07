@@ -14,6 +14,9 @@ module.exports = {
     // Disallow Labels That Are Variables Names
     'no-label-var': 0,
 
+    // Disallow specific global variables
+    'no-restricted-globals': 0,
+
     // Disallow Shadowing
     'no-shadow': 2,
 

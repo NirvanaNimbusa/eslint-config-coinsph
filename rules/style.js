@@ -108,6 +108,9 @@ module.exports = {
     // Require or disallow an empty newline after variable declarations
     'newline-after-var': [2, 'always'],
 
+    // Require newline before return statement
+    'newline-before-return': 2,
+
     // Newline Per Chained Method Call
     'newline-per-chained-call': [0, { ignoreChainWithDepth: 3 }],
 

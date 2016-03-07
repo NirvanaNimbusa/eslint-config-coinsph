@@ -80,7 +80,7 @@ module.exports = {
     'no-floating-decimal': 2,
 
     // Disallow the type conversion with shorter notations.
-    // FIXME: something wront with this rule
+    // FIXME: something wrong with this rule
     'no-implicit-coercion': [2, {
       boolean: false,
       number: false,
@@ -182,7 +182,7 @@ module.exports = {
 
     // Disallow Warning Comments
     'no-warning-comments': [1, {
-      terms: ['todo', 'fixme', 'xxx'],
+      terms: ['todo', 'fixme', 'xxx', 'hate'],
       location: 'start'
     }],
 
