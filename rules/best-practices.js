@@ -136,7 +136,7 @@ module.exports = {
     'no-octal-escape': 2,
 
     // Disallow Reassignment of Function Parameters
-    'no-param-reassign': [2, { props: true }],
+    'no-param-reassign': [1, { props: true }],
 
     // Disallow Use of __proto__
     'no-proto': 2,

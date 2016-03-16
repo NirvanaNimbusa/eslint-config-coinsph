@@ -38,7 +38,9 @@ module.exports = {
     'no-class-assign': 2,
 
     // Disallow arrow functions where they could be confused with comparisons
-    'no-confusing-arrow': 2,
+    'no-confusing-arrow': [2, {
+      allowParens: true
+    }],
 
     // Disallow modifying variables that are declared using const
     'no-const-assign': 0,
@@ -71,7 +73,7 @@ module.exports = {
     'prefer-reflect': 2,
 
     // Suggest using the rest parameters instead of arguments
-    'prefer-rest-params': 2,
+    'prefer-rest-params': 1,
 
     // Suggest using the spread operator instead of .apply()
     'prefer-spread': 2,
