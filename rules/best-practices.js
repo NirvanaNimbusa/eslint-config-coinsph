@@ -177,6 +177,13 @@ module.exports = {
     // Disallow unnecessary concatenation of strings
     'no-useless-concat': 2,
 
+    /*
+     * Disallow unnecessary escape usage
+     *
+     * @since ESLint v2.5.0
+     */
+    'no-useless-escape': 'error',
+
     // Disallow use of the void operator
     'no-void': 2,
 

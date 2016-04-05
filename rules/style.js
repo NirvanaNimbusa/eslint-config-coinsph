@@ -99,6 +99,13 @@ module.exports = {
     // Limit Maximum Number of Statements
     'max-statements': 0,
 
+    /*
+     * Specify the Maximum Number of Statements Allowed per Line
+     *
+     * @since ESLint v2.5.0
+     */
+    'max-statements-per-line': 'error',
+
     // Require Constructors to Use Initial Caps
     'new-cap': 1,
 

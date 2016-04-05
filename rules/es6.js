@@ -48,6 +48,15 @@ module.exports = {
     // Disallow duplicate name in class members
     'no-dupe-class-members': 0,
 
+    /*
+     * Disallow duplicate imports
+     *
+     * @since ESLint v2.5.0
+     */
+    'no-duplicate-imports': ['error', {
+        includeExports: true
+    }],
+
     // Disallow Symbol Constructor
     'no-new-symbol': 2,
 
