@@ -31,10 +31,10 @@
   ],
 
   "devDependencies": {
-    "eslint": "2.5.3"
+    "eslint": "2.6.0"
   },
 
   "peerDependencies": {
-    "eslint": "2.5.3"
+    "eslint": "2.6.0"
   }
 }
