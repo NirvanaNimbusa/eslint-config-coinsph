@@ -54,7 +54,7 @@ module.exports = {
      * @since ESLint v2.5.0
      */
     'no-duplicate-imports': ['error', {
-        includeExports: true
+      includeExports: true
     }],
 
     // Disallow Symbol Constructor
@@ -79,7 +79,7 @@ module.exports = {
     'prefer-const': 2,
 
     // Suggest using Reflect methods where applicable
-    'prefer-reflect': 2,
+    'prefer-reflect': 0,
 
     // Suggest using the rest parameters instead of arguments
     'prefer-rest-params': 1,
