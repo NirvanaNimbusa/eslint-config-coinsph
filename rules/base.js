@@ -47,7 +47,9 @@ module.exports = {
     'no-extra-boolean-cast': 2,
 
     // Disallow Extra Parens
-    'no-extra-parens': [1, 'all'],
+    'no-extra-parens': ['warn', 'all', {
+      nestedBinaryExpressions: true
+    }],
 
     // Disallow Extra Semicolons
     'no-extra-semi': 2,
