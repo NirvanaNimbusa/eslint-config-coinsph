@@ -63,6 +63,9 @@ module.exports = {
     // Disallow use of this/super before calling super() in constructors
     'no-this-before-super': 2,
 
+    // Disallow unnecessary computed property keys on objects
+    'no-useless-computed-key': 'error',
+
     // Disallow unnecessary constructor
     'no-useless-constructor': 2,
 
@@ -70,7 +73,7 @@ module.exports = {
     'no-var': 2,
 
     // Require Object Literal Shorthand Syntax
-    'object-shorthand': [2, 'always'],
+    'object-shorthand': ['error', 'always', { avoidQuotes: true }],
 
     // Suggest using arrow functions as callbacks
     'prefer-arrow-callback': 2,

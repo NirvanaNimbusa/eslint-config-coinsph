@@ -81,6 +81,9 @@ module.exports = {
     // Avoid unexpected multiline expressions
     'no-unexpected-multiline': 2,
 
+    // disallow control flow statements in finally blocks
+    'no-unsafe-finally': 'error',
+
     // Disallow Unreachable Code
     'no-unreachable': 2,
 

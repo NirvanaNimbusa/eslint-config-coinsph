@@ -184,6 +184,9 @@ module.exports = {
     // Disallow or enforce spaces inside of curly braces in objects
     'object-curly-spacing': [2, 'always'],
 
+    // enforce placing object properties on separate lines
+    'object-property-newline': 'warning',
+
     // Require or Disallow One Variable Declaration per Scope
     'one-var': [2, 'never'],
 
