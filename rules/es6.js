@@ -48,7 +48,7 @@ module.exports = {
     // Disallow duplicate name in class members
     'no-dupe-class-members': 0,
 
-    /*
+    /**
      * Disallow duplicate imports
      *
      * @since ESLint v2.5.0
@@ -68,6 +68,14 @@ module.exports = {
 
     // Disallow unnecessary constructor
     'no-useless-constructor': 2,
+
+    /**
+     * Disallow renaming import, export, and destructured assignments to the same name
+     *
+     * @since ESLint v2.11.0
+     * {@link http://eslint.org/docs/rules/no-useless-rename}
+     */
+    'no-useless-rename': 'error',
 
     // Require let or const instead of var
     'no-var': 2,

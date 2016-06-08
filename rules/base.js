@@ -72,6 +72,13 @@ module.exports = {
     // Disallow Global Object Function Calls
     'no-obj-calls': 2,
 
+    /**
+     * Disallow use of Object.prototypes builtins directly
+     *
+     * @since ESLint v2.11.0
+     */
+    'no-prototype-builtins': 'error',
+
     // Disallow Spaces in Regular Expressions
     'no-regex-spaces': 2,
 

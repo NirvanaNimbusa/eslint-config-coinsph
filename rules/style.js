@@ -69,7 +69,10 @@ module.exports = {
     }],
 
     // Enforce spacing before and after keywords
-    'keyword-spacing': [2, { before: true, after: true }],
+    'keyword-spacing': [2, {
+      before: true,
+      after: true
+    }],
 
     // Disallow mixing CRLF and LF linebreaks
     'linebreak-style': [2, 'unix'],
@@ -99,7 +102,7 @@ module.exports = {
     // Limit Maximum Number of Statements
     'max-statements': 0,
 
-    /*
+    /**
      * Specify the Maximum Number of Statements Allowed per Line
      *
      * @since ESLint v2.5.0
@@ -253,6 +256,14 @@ module.exports = {
 
     // Requires or disallows a whitespace (space or tab) beginning a comment
     'spaced-comment': [2, 'always'],
+
+    /**
+     * Require or disallow the Unicode Byte Order Mark (BOM)
+     *
+     * @since ESLint v2.11.0
+     * {@link http://eslint.org/docs/rules/unicode-bom}
+     */
+    'unicode-bom': ['error', 'never'],
 
     // Require Regex Literals to be Wrapped
     'wrap-regex': 1

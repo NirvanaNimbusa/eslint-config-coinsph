@@ -15,7 +15,7 @@ module.exports = {
     complexity: [2, 10],
 
     // Require Consistent Returns
-    'consistent-return': 2,
+    'consistent-return': 'error',
 
     // Require Following Curly Brace Conventions
     curly: [2, 'all'],
@@ -177,7 +177,7 @@ module.exports = {
     // Disallow unnecessary concatenation of strings
     'no-useless-concat': 2,
 
-    /*
+    /**
      * Disallow unnecessary escape usage
      *
      * @since ESLint v2.5.0
