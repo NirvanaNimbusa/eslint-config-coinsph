@@ -1,26 +1,22 @@
 {
   "name": "eslint-config-coinsph",
-  "version": "1.8.1",
+  "version": "1.9.0",
   "description": "Coins.ph's ESLint config file",
   "main": "index.js",
   "author": "Roman (Ky6uk) Nuritdinov",
   "license": "MIT",
   "homepage": "https://github.com/coinsph/eslint-config-coinsph",
-
   "repository": {
     "type": "git",
     "url": "https://github.com/coinsph/eslint-config-coinsph"
   },
-
   "bugs": {
     "url": "https://github.com/coinsph/eslint-config-coinsph/issues"
   },
-
   "scripts": {
     "lint": "eslint .",
     "test": "npm run lint"
   },
-
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -29,11 +25,9 @@
     "javascript",
     "styleguide"
   ],
-
   "devDependencies": {
     "eslint": "2.11.1"
   },
-
   "peerDependencies": {
     "eslint": "2.11.1"
   }
