@@ -79,13 +79,13 @@ module.exports = {
     // Disallow Floating Decimals
     'no-floating-decimal': 2,
 
-    // Disallow the type conversion with shorter notations.
-    // FIXME: something wrong with this rule
-    'no-implicit-coercion': [2, {
-      boolean: false,
-      number: false,
-      string: false
-    }],
+    /**
+     * Disallow the type conversion with shorter notations.
+     *
+     * @since ESLint v1.0.0-rc-2
+     * {@link http://eslint.org/docs/rules/no-implicit-coercion}
+     */
+    'no-implicit-coercion': 'error',
 
     // Disallow var and Named Functions in Global Scope
     'no-implicit-globals': 2,

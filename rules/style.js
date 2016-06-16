@@ -93,6 +93,18 @@ module.exports = {
       ignoreUrls: true
     }],
 
+    /**
+     * enforce a maximum file length
+     *
+     * @since ESLint v2.12.0
+     * {@link http://eslint.org/docs/rules/max-lines}
+     */
+    'max-lines': ['warn', {
+      max: 300,
+      skipBlankLines: true,
+      skipComments: true
+    }],
+
     // Set Maximum Depth of Nested Callbacks
     'max-nested-callbacks': [2, 3],
 
@@ -139,6 +151,14 @@ module.exports = {
     // Disallow if as the Only Statement in an else Block
     'no-lonely-if': 2,
 
+    /**
+     * Disallow mixes of different operators
+     *
+     * @since ESLint v2.12.0
+     * {@link http://eslint.org/docs/rules/no-mixed-operators}
+     */
+    'no-mixed-operators': 'off',
+
     // Disallow mixed spaces and tabs for indentation
     'no-mixed-spaces-and-tabs': 2,
 
@@ -183,6 +203,14 @@ module.exports = {
 
     // Disallow whitespace before properties
     'no-whitespace-before-property': 2,
+
+    /**
+     * require or disallow line breaks inside braces
+     *
+     * @since ESLint v2.12.0
+     * {@link http://eslint.org/docs/rules/object-curly-newline}
+     */
+    'object-curly-newline': 'off',
 
     // Disallow or enforce spaces inside of curly braces in objects
     'object-curly-spacing': [2, 'always'],

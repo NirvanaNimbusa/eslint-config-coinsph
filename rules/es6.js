@@ -104,6 +104,13 @@ module.exports = {
     // Disallow generator functions that do not have yield
     'require-yield': 2,
 
+    /**
+     * Enforce spacing between rest and spread operators and their expressions
+     *
+     * @since ESLint v2.12.0
+     */
+    'rest-spread-spacing': ['error', 'never'],
+
     // Enforce Usage of Spacing in Template Strings
     'template-curly-spacing': [2, 'never'],
 
