@@ -121,6 +121,14 @@ module.exports = {
      */
     'max-statements-per-line': 'error',
 
+    /**
+     * Enforce newlines between operands of ternary expressions
+     *
+     * @since ESLint v3.1.0
+     * {@link http://eslint.org/docs/rules/multiline-ternary}
+     */
+    'multiline-ternary': 'off',
+
     // Require Constructors to Use Initial Caps
     'new-cap': 1,
 
@@ -187,14 +195,27 @@ module.exports = {
     // Disallow Spaces in Function Calls
     'no-spaced-func': 2,
 
+    /**
+     * Disallow tabs in file
+     *
+     * @since ESLint v3.2.0
+     * {@link http://eslint.org/docs/rules/no-tabs}
+     */
+    'no-tabs': 'error',
+
     // Disallow Ternary Operators
     'no-ternary': 0,
 
     // Disallow trailing spaces at the end of lines
     'no-trailing-spaces': 2,
 
-    // Disallow Dangling Underscores in Identifiers
-    'no-underscore-dangle': 0,
+    /**
+     * Disallow Dangling Underscores in Identifiers
+     *
+     * @since ESLint v0.0.9
+     * {@link http://eslint.org/docs/rules/no-underscore-dangle}
+     */
+    'no-underscore-dangle': 'off',
 
     // Disallow conditional expressions that can be expressed with simpler constructs
     'no-unneeded-ternary': [2, {
@@ -282,8 +303,17 @@ module.exports = {
       nonwords: false
     }],
 
-    // Requires or disallows a whitespace (space or tab) beginning a comment
-    'spaced-comment': [2, 'always'],
+    /**
+     * Requires or disallows a whitespace (space or tab) beginning a comment
+     *
+     * @since ESLint v0.23.0
+     * {@link http://eslint.org/docs/rules/spaced-comment}
+     */
+    'spaced-comment': ['error', 'always', {
+      block: {
+        balanced: true
+      }
+    }],
 
     /**
      * Require or disallow the Unicode Byte Order Mark (BOM)
