@@ -85,11 +85,27 @@ module.exports = {
     // Disallow Sparse Arrays
     'no-sparse-arrays': 2,
 
+    /**
+     * Disallow template literal placeholder syntax in regular strings
+     *
+     * @since ESLint v3.3.0
+     * {@link http://eslint.org/docs/rules/no-template-curly-in-string}
+     */
+    'no-template-curly-in-string': 'error',
+
     // Avoid unexpected multiline expressions
     'no-unexpected-multiline': 2,
 
     // disallow control flow statements in finally blocks
     'no-unsafe-finally': 'error',
+
+    /**
+     * Disallow negating the left operand of relational operators
+     *
+     * @since ESLint v3.3.0
+     * {@link http://eslint.org/docs/rules/no-unsafe-negation}
+     */
+    'no-unsafe-negation': 'error',
 
     // Disallow Unreachable Code
     'no-unreachable': 2,

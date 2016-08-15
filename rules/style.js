@@ -36,6 +36,14 @@ module.exports = {
     // Require file to end with single newline
     'eol-last': [2, 'unix'],
 
+    /**
+     * Require or disallow spacing between function identifiers and their invocations
+     *
+     * @since ESLint v3.3.0
+     * {@link http://eslint.org/docs/rules/func-call-spacing}
+     */
+    'func-call-spacing': ['error', 'never'],
+
     // Require Function Expressions to have a Name
     'func-names': 0,
 
@@ -192,9 +200,6 @@ module.exports = {
     // Disallow certain syntax
     'no-restricted-syntax': 0,
 
-    // Disallow Spaces in Function Calls
-    'no-spaced-func': 2,
-
     /**
      * Disallow tabs in file
      *
@@ -278,6 +283,14 @@ module.exports = {
 
     // Import Sorting
     'sort-imports': 0,
+
+    /**
+     * Requires object keys to be sorted
+     *
+     * @since ESLint v3.3.0
+     * {@link http://eslint.org/docs/rules/sort-keys}
+     */
+    'sort-keys': 'off',
 
     // Variable Sorting
     'sort-vars': 0,

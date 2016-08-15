@@ -80,6 +80,14 @@ module.exports = {
     'no-floating-decimal': 2,
 
     /**
+     * Disallow assignment to native objects or read-only global variables
+     *
+     * @since ESLint v3.3.0
+     * {@link http://eslint.org/docs/rules/no-global-assign}
+     */
+    'no-global-assign': 'error',
+
+    /**
      * Disallow the type conversion with shorter notations.
      *
      * @since ESLint v1.0.0-rc-2

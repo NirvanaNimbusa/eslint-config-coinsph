@@ -19,8 +19,15 @@ module.exports = {
     // Require braces in arrow function body
     'arrow-body-style': [2, 'as-needed'],
 
-    // Require parens in arrow function arguments
-    'arrow-parens': 0,
+    /**
+     *  Require parens in arrow function arguments
+     *
+     * @since ESLint v1.0.0-rc-1
+     * {@link http://eslint.org/docs/rules/arrow-parens}
+     */
+    'arrow-parens': ['error', 'as-needed', {
+      requireForBlockBody: true
+    }],
 
     // Require space before/after arrow function's arrow
     'arrow-spacing': [2, {
