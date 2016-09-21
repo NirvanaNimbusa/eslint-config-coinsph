@@ -82,6 +82,17 @@ module.exports = {
       after: true
     }],
 
+    /**
+     * Enforce position of line comments
+     *
+     * {@link http://eslint.org/docs/rules/line-comment-position}
+     * @since ESLint v3.5.0
+     */
+    'line-comment-position': ['error', {
+      position: 'above',
+      applyDefaultPatterns: false
+    }],
+
     // Disallow mixing CRLF and LF linebreaks
     'linebreak-style': [2, 'unix'],
 
@@ -93,12 +104,30 @@ module.exports = {
       allowObjectStart: true
     }],
 
+    /**
+     * Require or disallow newlines around directives
+     *
+     * {@link http://eslint.org/docs/rules/lines-around-directive}
+     * @since ESLint v3.5.0
+     */
+    'lines-around-directive': ['error', {
+      before: 'never',
+      after: 'always'
+    }],
+
     // Limit Maximum Depth
     'max-depth': [2, 4],
 
-    // Limit Maximum Length of Line
+    /**
+     * Enforce a maximum line length
+     *
+     * {@link http://eslint.org/docs/rules/max-len}
+     * @since ESLint v0.0.9, v3.5.0
+     */
     'max-len': [2, 100, 2, {
-      ignoreUrls: true
+      ignoreUrls: true,
+      ignoreStrings: true,
+      ignoreTemplateLiterals: true
     }],
 
     /**
@@ -178,9 +207,15 @@ module.exports = {
     // Disallow mixed spaces and tabs for indentation
     'no-mixed-spaces-and-tabs': 2,
 
-    // Disallows multiple blank lines
-    'no-multiple-empty-lines': [2, {
-      max: 1
+    /**
+     * Disallow multiple empty lines
+     *
+     * {@link http://eslint.org/docs/rules/no-multiple-empty-lines}
+     * @since ESLint v0.9.0
+     */
+    'no-multiple-empty-lines': ['error', {
+      max: 1,
+      maxBOF: 0
     }],
 
     // Disallow use of negated expressions in conditions

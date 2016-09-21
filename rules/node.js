@@ -34,6 +34,14 @@ module.exports = {
     // Disallow Node modules
     'no-restricted-modules': 0,
 
+    /**
+     * Disallow certain object properties
+     *
+     * {@link http://eslint.org/docs/rules/no-restricted-properties}
+     * @since ESLint v3.5.0
+     */
+    'no-restricted-properties': 'off',
+
     // Disallow Synchronous Methods
     'no-sync': 1
   }

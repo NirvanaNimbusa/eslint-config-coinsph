@@ -11,6 +11,14 @@ module.exports = {
     // Treat var as Block Scoped
     'block-scoped-var': 2,
 
+    /**
+     * Enforce that class methods utilize this
+     *
+     * {@link http://eslint.org/docs/rules/class-methods-use-this}
+     * @since ESLint v3.4.0
+     */
+    'class-methods-use-this': 'warn',
+
     // Limit Cyclomatic Complexity
     complexity: [2, 10],
 

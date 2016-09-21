@@ -116,7 +116,14 @@ module.exports = {
     // Validates JSDoc comments are syntactically correct
     'valid-jsdoc': 0,
 
-    // Ensures that the results of typeof are compared against a valid string
-    'valid-typeof': 2
+    /**
+     * Enforce comparing typeof expressions against valid strings
+     *
+     * {@link http://eslint.org/docs/rules/valid-typeof}
+     * @since ESLint v0.5.0
+     */
+    'valid-typeof': ['error', {
+      requireStringLiterals: true
+    }]
   }
 };

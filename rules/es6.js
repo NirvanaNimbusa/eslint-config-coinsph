@@ -96,6 +96,14 @@ module.exports = {
     // Suggest using const
     'prefer-const': 2,
 
+    /**
+     * disallow parseInt() in favor of binary, octal, and hexadecimal literals
+     *
+     * {@link http://eslint.org/docs/rules/prefer-numeric-literals}
+     * @since ESLint v3.5.0
+     */
+    'prefer-numeric-literals': 'warn',
+
     // Suggest using Reflect methods where applicable
     'prefer-reflect': 0,
 
@@ -117,6 +125,14 @@ module.exports = {
      * @since ESLint v2.12.0
      */
     'rest-spread-spacing': ['error', 'never'],
+
+    /**
+     * Require symbol description
+     *
+     * {@link http://eslint.org/docs/rules/symbol-description}
+     * @since ESLint v3.4.0
+     */
+    'symbol-description': 'error',
 
     // Enforce Usage of Spacing in Template Strings
     'template-curly-spacing': [2, 'never'],
