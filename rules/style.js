@@ -50,7 +50,8 @@ module.exports = {
     'func-call-spacing': ['error', 'never'],
 
     /**
-     * Require function names to match the name of the variable or property to which they are assigned
+     * Require function names to match the name of the variable
+     * or property to which they are assigned
      *
      * @since ESLint v3.8.0
      * {@link http://eslint.org/docs/rules/func-name-matching}
