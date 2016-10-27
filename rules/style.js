@@ -33,8 +33,13 @@ module.exports = {
     // Require Consistent This
     'consistent-this': [1, 'self'],
 
-    // Require file to end with single newline
-    'eol-last': [2, 'unix'],
+    /**
+     * Require or disallow newline at the end of files
+     *
+     * @since ESLint v0.7.1
+     * {@link http://eslint.org/docs/rules/eol-last}
+     */
+    'eol-last': 'error',
 
     /**
      * Require or disallow spacing between function identifiers and their invocations
@@ -43,6 +48,14 @@ module.exports = {
      * {@link http://eslint.org/docs/rules/func-call-spacing}
      */
     'func-call-spacing': ['error', 'never'],
+
+    /**
+     * Require function names to match the name of the variable or property to which they are assigned
+     *
+     * @since ESLint v3.8.0
+     * {@link http://eslint.org/docs/rules/func-name-matching}
+     */
+    'func-name-matching': 'error',
 
     // Require Function Expressions to have a Name
     'func-names': 0,
