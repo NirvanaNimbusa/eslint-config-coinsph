@@ -24,8 +24,13 @@ module.exports = {
       after: true
     }],
 
-    // Comma style
-    'comma-style': [2, 'last'],
+    /**
+     * Comma style
+     *
+     * @since ESLint v0.9.0
+     * {@link http://eslint.org/docs/rules/comma-style}
+     */
+    'comma-style': ['error'],
 
     // Disallow or enforce spaces inside of computed properties
     'computed-property-spacing': [2, 'never'],
@@ -75,9 +80,15 @@ module.exports = {
     // Require IDs to match a pattern
     'id-match': 0,
 
-    // Validate Indentation
-    indent: [2, 2, {
-      SwitchCase: 1
+    /**
+     * Enforce consistent indentation
+     *
+     * @since ESLint v0.14.0
+     * {@link http://eslint.org/docs/rules/indent}
+     */
+    indent: ['error', 2, {
+      SwitchCase: 1,
+      MemberExpression: 1
     }],
 
     // Enforce JSX Quote Style
@@ -141,7 +152,8 @@ module.exports = {
     'max-len': [2, 100, 2, {
       ignoreUrls: true,
       ignoreStrings: true,
-      ignoreTemplateLiterals: true
+      ignoreTemplateLiterals: true,
+      ignoreRegExpLiterals: true
     }],
 
     /**

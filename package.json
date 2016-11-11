@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-coinsph",
-  "version": "2.4.1",
+  "version": "2.5.0",
   "description": "Coins.ph's ESLint config file",
   "main": "index.js",
   "author": "Roman (Ky6uk) Nuritdinov",
@@ -27,7 +27,7 @@
     "styleguide"
   ],
   "devDependencies": {
-    "eslint": "3.8.1",
+    "eslint": "3.10.0",
     "yarn": "0.16.1"
   },
   "peerDependencies": {

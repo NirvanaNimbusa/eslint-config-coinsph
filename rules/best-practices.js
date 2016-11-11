@@ -163,6 +163,14 @@ module.exports = {
     // Disallow Assignment in return Statement
     'no-return-assign': [2, 'always'],
 
+    /**
+     * Disallows unnecessary `return await`
+     *
+     * @since ESLint v3.10.0
+     * {@link http://eslint.org/docs/rules/no-return-await}
+     */
+    'no-return-await': 'error',
+
     // Disallow Script URLs
     'no-script-url': 2,
 
@@ -199,6 +207,14 @@ module.exports = {
      * @since ESLint v2.5.0
      */
     'no-useless-escape': 'error',
+
+    /**
+     * Disallow redundant return statements
+     *
+     * @since ESLint v3.9.0
+     * {@link http://eslint.org/docs/rules/no-useless-return}
+     */
+    'no-useless-return': 'error',
 
     // Disallow use of the void operator
     'no-void': 2,
