@@ -231,6 +231,14 @@ module.exports = {
     // Require Radix Parameter
     radix: [2, 'always'],
 
+    /**
+     * Disallow async functions which have no await expression
+     *
+     * @since ESLint v3.11.0
+     * {@link http://eslint.org/docs/rules/require-await}
+     */
+    'require-await': 'error',
+
     // Require Variable Declarations to be at the top of their scope
     'vars-on-top': 2,
 

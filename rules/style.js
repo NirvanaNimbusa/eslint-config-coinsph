@@ -18,6 +18,14 @@ module.exports = {
       properties: 'always'
     }],
 
+    /**
+     * Enforce or disallow capitalization of the first letter of a comment
+     *
+     * @since ESLint v3.11.0
+     * {@link http://eslint.org/docs/rules/capitalized-comments}
+     */
+    'capitalized-comments': 'off',
+
     // Enforces spacing around commas
     'comma-spacing': [2, {
       before: false,
