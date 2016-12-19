@@ -7,6 +7,14 @@ module.exports = {
   },
 
   rules: {
+    /**
+     * Disallow await inside of loops
+     *
+     * @since ESLint v3.12.0
+     * {@link http://eslint.org/docs/rules/no-await-in-loop}
+     */
+    'no-await-in-loop': 'error',
+
     // Disallow or Enforce Dangling Commas
     'comma-dangle': [2, 'never'],
 
