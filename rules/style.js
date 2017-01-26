@@ -242,6 +242,14 @@ module.exports = {
     'no-mixed-spaces-and-tabs': 2,
 
     /**
+     * Disallow Use of Chained Assignment Expressions
+     *
+     * {@link http://eslint.org/docs/rules/no-multi-assign}
+     * @since ESLint v3.14.0
+     */
+    'no-multi-assign': 'error',
+
+    /**
      * Disallow multiple empty lines
      *
      * {@link http://eslint.org/docs/rules/no-multiple-empty-lines}

@@ -228,6 +228,14 @@ module.exports = {
     // No with Statements (replaced in `no-restricted-syntax`)
     'no-with': 2,
 
+    /**
+     * Require using Error objects as Promise rejection reasons
+     *
+     * {@link http://eslint.org/docs/rules/prefer-promise-reject-errors}
+     * @since ESLint v3.14.0
+     */
+    'prefer-promise-reject-errors': 'off',
+
     // Require Radix Parameter
     radix: [2, 'always'],
 

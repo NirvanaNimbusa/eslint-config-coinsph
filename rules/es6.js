@@ -97,6 +97,16 @@ module.exports = {
     'prefer-const': 2,
 
     /**
+     * Prefer destructuring from arrays and objects
+     *
+     * {@link http://eslint.org/docs/rules/prefer-destructuring}
+     * @since ESLint v3.13.0
+     */
+    'prefer-destructuring': ['error', {
+      array: false
+    }],
+
+    /**
      * disallow parseInt() in favor of binary, octal, and hexadecimal literals
      *
      * {@link http://eslint.org/docs/rules/prefer-numeric-literals}
